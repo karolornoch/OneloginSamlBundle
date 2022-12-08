@@ -42,9 +42,11 @@ hslavich_onelogin_saml:
         entityId: 'http://id.example.com/saml2/idp/metadata.php'
         singleSignOnService:
             url: 'http://id.example.com/saml2/idp/SSOService.php'
+            destinationUrl: 'http://id.example.com/saml2/idp/SSOService.php'
             binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
         singleLogoutService:
             url: 'http://id.example.com/saml2/idp/SingleLogoutService.php'
+            destinationUrl: 'http://id.example.com/saml2/idp/SSOService.php'
             binding: 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect'
         x509cert: ''
     sp:
